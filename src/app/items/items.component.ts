@@ -3,7 +3,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 
 @Component({
-  selector: 'app-items',
+  selector: 'items-component',
   templateUrl: './items.component.html',
   styleUrls: ['./items.component.css']
 })
