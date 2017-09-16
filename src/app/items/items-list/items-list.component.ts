@@ -12,7 +12,7 @@ export class ItemsListComponent implements OnInit {
 
   items: FirebaseListObservable<Item[]>;
 
-  showSpinner = true;
+  showSpinner = false;
 
 
   constructor(private itemSvc: ItemService) { }

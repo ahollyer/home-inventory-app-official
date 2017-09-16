@@ -24,7 +24,7 @@ import { UiModule } from './ui/shared/ui.module';
 ///// End FireStarter
 
 // Material Components & Modules
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdFormFieldModule } from '@angular/material';
 
 

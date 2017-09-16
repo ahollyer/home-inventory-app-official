@@ -12,6 +12,7 @@ import { ItemDetailComponent } from '../item-detail/item-detail.component';
 
 // Material Angular Components & Modules
 import { MdFormFieldModule } from '@angular/material';
+import {MdInputModule} from '@angular/material';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { MdFormFieldModule } from '@angular/material';
     ReactiveFormsModule,
     FormsModule,
     AngularFireDatabaseModule,
-    MdFormFieldModule
+    MdFormFieldModule,
+    MdInputModule
   ],
   declarations: [
     ItemsListComponent,
