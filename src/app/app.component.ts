@@ -1,19 +1,14 @@
 import { Component } from '@angular/core';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
-
+import { AuthService } from './core/auth.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  title = 'FireStarter app works!';
 
+  constructor() { }
 
-  title = 'app';
-
-  items: FirebaseListObservable<any[]>;
-    constructor(db: AngularFireDatabase) {
-
-    }
-  }
+}

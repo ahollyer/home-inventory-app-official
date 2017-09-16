@@ -1,7 +1,20 @@
-<main>
-  <div class="main">
-    <h1>Welcome to Harvey Insurance App (HiApp)</h1>
-    <button><a href="/home">Go to App</a></button>
-    <router-outlet></router-outlet>
+<top-nav></top-nav>
+
+  <div class="content columns">
+
+    <aside class="column is-2 is-offset-1">
+        <user-profile></user-profile>
+    </aside>
+
+
+    <main class="column is-8">
+      <router-outlet></router-outlet>
+    </main>
+
+    <aside class="column is-1">
+    </aside>
+
   </div>
-</main>
+
+
+<footer-nav></footer-nav>

@@ -1,30 +1,54 @@
-# AppName
+# FireStarter - Angular4 + Firebase Starter App
 
-v0.4.2
+FireStarter is designed to handle the basic features most Angular+Firebase apps need. It can serve as a foundation to quickly roll out more complex features.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
+- [Live Demo](https://firestarter-96e46.firebaseapp.com/)
+- [Lessons and Screencasts](https://angularfirebase.com)
+- [Join the Slack Team](https://join.slack.com/angularfirebase/shared_invite/MjA2NTgxMTI0MTk2LTE0OTg4NTQ4MDAtMjhhZDIzMjc0Mg)
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Authentication w/ Router Guard
+- Realtime Database CRUD Demo
+- File Uploads to Firebase Storage Demo
+- SASS + Bulma + FontAwesome
+- Reactive Form Validation
 
-## Code scaffolding
+## Usage
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Create an account at https://firebase.google.com/
 
-## Build
+- `git clone https://github.com/codediodeio/angular-firestarter.git firestarter`
+- `cd firestarter`
+- `npm install`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Create the environment files below in `src/environments/`.
 
-## Running unit tests
+#### environment.ts
+```typescript
+export const environment = {
+    production: false,
+    firebaseConfig: {
+        apiKey: 'APIKEY',
+        authDomain: 'DEV-APP.firebaseapp.com',
+        databaseURL: 'https://DEV-APP.firebaseio.com',
+        storageBucket: 'DEV-APP.appspot.com'
+    }
+};
+```
+#### environment.prod.ts
+```typescript
+export const environment = {
+    production: true,
+    firebaseConfig: {
+        // same as above, or use a different firebase project to isolate environments
+    }
+};
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+And finally `ng serve`
 
-## Running end-to-end tests
+## Apps Using FireStarter in Production
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- [ArtiFilter](https://app.artifilter.com) - Neural Art Generator
+- [FlashLawyer](https://flashlawyer.com) - Legal Document Builder and Chatbot
