@@ -10,13 +10,18 @@ import { ItemsListComponent } from '../items-list/items-list.component';
 import { ItemFormComponent } from '../item-form/item-form.component';
 import { ItemDetailComponent } from '../item-detail/item-detail.component';
 
+// Material Angular Components & Modules
+import { MdFormFieldModule } from '@angular/material';
+
+
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
     ReactiveFormsModule,
     FormsModule,
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    MdFormFieldModule
   ],
   declarations: [
     ItemsListComponent,

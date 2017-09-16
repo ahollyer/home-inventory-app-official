@@ -23,6 +23,10 @@ import { UploadModule } from './uploads/shared/upload.module';
 import { UiModule } from './ui/shared/ui.module';
 ///// End FireStarter
 
+// Material Components & Modules
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MdFormFieldModule } from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -37,6 +41,8 @@ import { UiModule } from './ui/shared/ui.module';
     ItemModule,
     UiModule,
     AngularFireModule.initializeApp(firebaseConfig),
+    BrowserAnimationsModule,
+    MdFormFieldModule
   ],
   bootstrap: [
     AppComponent
